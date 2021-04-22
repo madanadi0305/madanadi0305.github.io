@@ -1,0 +1,382 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+<link href="./client/assets/css/reset.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>TV Astra</title>
+<style>
+ nav{
+ display: flex;    
+ background-color:white;
+ flex-direction: row; 
+ 
+ }   
+ 
+
+.affordable-healthcare{
+    margin-top:0px;
+    background-color:#8fcaf1;
+    width:auto;
+    height:auto;
+    padding-bottom:40px ;
+}
+#para1{
+    font-size: 60px;
+    padding-top: 20px;
+    padding-left: 30px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Gill sans-serif';
+
+}
+
+#para2{
+    margin-top: 10px;
+    padding-left: 30px;
+    font-size: 30px;
+    font-family: Verdana sans-serif;   
+}
+#search{
+   background-color:rgb(0, 0, 102); 
+}
+#searchtext{
+  color: #ffffff;
+  text-align: center;
+}
+
+.searchButtonDiv{
+    display: flex;
+    justify-content: center;
+}
+#searchButton{
+    width:10%;
+    height: 40;
+    margin-top:30px;
+
+    
+    background-color:rgb(0,0,51);
+    margin-top: 10px;
+    
+    
+}
+.icon{
+    min-width: 40px;
+    padding: 10px;
+}
+#howItWorks{
+margin-top:50px;
+
+
+}
+#text1{
+text-align: center;
+font-weight:700;
+font-size:40px;
+
+}
+#para3{
+    text-align: center;
+    color: gray;
+    font-size:30px;
+    margin-top:30px;
+}
+#para04{
+    font-size: 30px;
+    color:gray;
+        
+    
+}
+
+#paraStep1{
+    color: #000000;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#paraSteps2to7{
+    color:gray;
+    font-size: 30px;
+    font-weight: 600;
+}
+.consultation{
+    display: inline-block;
+    border:2px solid black;
+    border-radius:10px;
+    width:100%;
+    height: 50px;
+    margin-left:10px;
+    padding: 30px 30px 30px 30px;
+    margin-right: 10px;
+}
+.consultation-group{
+    display: inline-block;
+    border:2px solid gray;
+    border-radius:10px;
+    width:100%;
+    height: 50px;
+    margin-left:10px;
+    padding: 30px 30px 30px 30px;
+    margin-right: 10px;
+}
+.grid-container{
+    display:grid;
+    grid-template-areas:
+     "main";
+    margin-top: 20px;
+    background-color: rgb(0, 51, 102);
+    
+}
+.grid-container-services{
+    display:grid;
+    grid-template-areas:
+     "main";
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+.doctors{
+    padding: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    width:auto;
+    height:auto;    
+}
+.doctors-info{
+    display: grid;
+    width: auto;
+    height: auto;
+    margin-left:auto;
+    margin-top:0px;
+    
+}
+
+ hr.horizontal-line-style{
+
+background-color: blue;
+height:10px;
+margin-left: 0px;
+width:20px;
+}
+
+</style>
+</head>
+<body>
+<nav>
+    <img src="./client/assets/images/Logo.jpg" style="width: 200px;height: 100px;align-items: flex-start;margin-top: 10px;margin-left: 20px;">
+    <i class="fa fa-bars" style="align-items: flex-end;justify-items: flex-end;margin-top: 60px;height: 50;;color: #525659;margin-left: auto;margin-right: 10px; "></i>
+</nav>
+<div class="affordable-healthcare">
+<p id="para1">
+ Find Affordable <br> 
+   Healthcare
+
+</p>
+<p id="para2">Join the thousands of others who have <br> exercised their right to quality<br> 
+    healthcare at a price you can afford.</p>
+<div style="padding-left: 30px;display: flex;flex-direction: column;">
+<div class="icon-group">
+    
+    <input style="padding-left:10px ;height: 40;width: 70%;margin-top: 20px;" type="text" name="City" placeholder="Ahmedabad">
+</div>
+
+
+<input style="width:70%;margin-top: 20px;height:40;" type="text" placeholder="Search for Doctor, hospitals and treatments">
+
+
+</div>
+<div class="searchButtonDiv">
+<button id="searchButton"><p id="searchtext">Search</p></button>
+</div>
+</div>
+<div id="howItWorks">
+<p id="text1">How it works</p>
+<p id="para3">
+    Various facilities are provided here. But <br> 
+        there is a protocol which needs to be<br> 
+    followed so that you get the service at its<br>
+    best
+</p>
+<div class="consultation" style="margin-top: 20px;" >
+<p><span id="para04"> 01</span> <span id="paraStep1">    Fix Consultation </span></p>
+
+</div>
+<div>
+<div class="searchButtonDiv">    
+<img style="margin-left: auto;margin-right: auto;margin-top: 30px;" src="./client/assets/images/img 1.png">    
+</div>
+<p style="text-align: center;margin-top: 30px;font-size: 40px;font-weight: 600;">Fix Consultation</p>
+<p style="margin-top: 20px;text-align: center;font-size: 30px;color: gray;">This depicts that user will have to fix<br>
+    appointment first when it selects a 
+    <br>particular director</p>
+</div>
+<div class="consultation-group" style="margin-top: 20px;">
+<p><span id="para04">02</span><span id="paraSteps2to7"> Upload Medical Reports</span></p>    
+</div>
+<div class="consultation-group" style="margin-top: 20px;">
+    <p><span id="para04">03</span><span id="paraSteps2to7"> Consult with doctor</span></p>    
+    </div>
+    <div class="consultation-group" style="margin-top: 20px;">
+        <p><span id="para04">04</span><span id="paraSteps2to7"> Fix Surgery</span></p>    
+        </div>    
+    <div class="consultation-group" style="margin-top: 20px;">
+            <p><span id="para04">05</span><span id="paraSteps2to7"> Hospital Sent estimates</span></p>    
+    </div>
+    <div class="consultation-group" style="margin-top: 20px;">
+                <p><span id="para04">06</span><span id="paraSteps2to7"> Payment</span></p>    
+    </div>    
+    <div class="consultation-group" style="margin-top: 20px;">
+                    <p><span id="para04">07</span><span id="paraSteps2to7"> Surgery Completed</span></p>    
+    </div>    
+</div>
+
+<div class="grid-container">
+<div style="text-align: center;font-size: 30px;color: #ffffff;height: auto;padding-top: 20px;">World Class Doctors
+<br>
+The university of Texas Southeastern<br>Medical center has been a long world-<br>
+renowned research hospital. But until <br> the '80s, you couldn't go there. Now, <br> with the addition of Aston Center 
+<br> Zale Lipshy Hospital, UT Southeastern is<br> also a mecca for patients.
+</div>
+<div class="doctors">
+<img src="./client/assets/images/image--002.jpg">
+<div class="doctors-info" style="background-color: #ffffff;">
+   <span><hr class="horizontal-line-style">
+    <p style="color: blue;margin-left: 20px;font-size: larger;">Duke Sanson</p>
+   </span>
+    <br>
+    <p style="margin-left: 20px;font-size: larger;">
+    Neuro Surgeon<br>
+    Chain Department of Neurological<br>Surgery<br>Australia
+    </p>
+    </div>
+    
+</div>
+
+<div class="doctors">
+    <img src="./client/assets/images/image--004.jpg">
+    <div class="doctors-info" style="background-color: #ffffff;">
+       <span><hr class="horizontal-line-style">
+        <p style="color: blue;margin-left: 20px;font-size: larger;">Georgea Peter</p>
+       </span>
+        <br>
+        <p style="margin-left: 20px;font-size: larger;padding-bottom: 20px;">
+        Breast Cancer Surgeon<br>
+        Director , UT ,Southwest<br>London
+        </p>
+        </div>
+        
+    </div>
+    
+    <div class="doctors">
+        <img src="./client/assets/images/image--005.jpg" width="800px" height="900px">
+        <div class="doctors-info" style="background-color: #ffffff;">
+           <span><hr class="horizontal-line-style">
+            <p style="color: blue;margin-left: 20px;font-size: larger;">Charlie Moon</p>
+           </span>
+            <br>
+            <p style="margin-left: 20px;font-size: larger;padding-bottom: 20px;">
+            Cardiac Surgeon<br>
+            MBBS, MD , FRCP , MRCP, Fellowship<br>Surgery<br>New Delhi, India
+            </p>
+            </div>
+            
+        </div>
+        
+        <div class="doctors">
+            <img src="./client/assets/images/image--003.jpg" width="800px" height="900px">
+            <div class="doctors-info" style="background-color: #ffffff;">
+               <span><hr class="horizontal-line-style">
+                <p style="color: blue;margin-left: 20px;font-size: larger;">Rose Moon</p>
+               </span>
+                <br>
+                <p style="margin-left: 20px;font-size: larger;padding-bottom: 20px;">
+                Plastic Surgeon<br>
+                Department of Plastic and <br> Reconstructive  Surgery<br>Dubai
+                </p>
+                </div>
+                
+            </div>
+            
+            
+                </div>
+                
+
+
+</div>
+<div class="grid-container-services">
+    <div style="text-align: center;font-size: 30px;color:black;height: auto;padding-top: 20px;font-size: 50px;font-weight: 900;">
+        Featured Medical Treatments
+    <br>
+    Join the thousands of others who have
+    </div>
+    <div class="doctors">
+    <img src="./client/assets/images/image--002.jpg">
+    <div class="doctors-info" style="background-color: #ffffff;">
+       <span><hr class="horizontal-line-style">
+        <p style="color: blue;margin-left: 20px;font-size: larger;">Duke Sanson</p>
+       </span>
+        <br>
+        <p style="margin-left: 20px;font-size: larger;">
+        Neuro Surgeon<br>
+        Chain Department of Neurological<br>Surgery<br>Australia
+        </p>
+        </div>
+        
+    </div>
+    
+    <div class="doctors">
+        <img src="./client/assets/images/image--004.jpg">
+        <div class="doctors-info" style="background-color: #ffffff;">
+           <span><hr class="horizontal-line-style">
+            <p style="color: blue;margin-left: 20px;font-size: larger;">Georgea Peter</p>
+           </span>
+            <br>
+            <p style="margin-left: 20px;font-size: larger;padding-bottom: 20px;">
+            Breast Cancer Surgeon<br>
+            Director , UT ,Southwest<br>London
+            </p>
+            </div>
+            
+        </div>
+        
+        <div class="doctors">
+            <img src="./client/assets/images/image--005.jpg" width="800px" height="900px">
+            <div class="doctors-info" style="background-color: #ffffff;">
+               <span><hr class="horizontal-line-style">
+                <p style="color: blue;margin-left: 20px;font-size: larger;">Charlie Moon</p>
+               </span>
+                <br>
+                <p style="margin-left: 20px;font-size: larger;padding-bottom: 20px;">
+                Cardiac Surgeon<br>
+                MBBS, MD , FRCP , MRCP, Fellowship<br>Surgery<br>New Delhi, India
+                </p>
+                </div>
+                
+            </div>
+            
+            <div class="doctors">
+                <img src="./client/assets/images/image--003.jpg" width="800px" height="900px">
+                <div class="doctors-info" style="background-color: #ffffff;">
+                   <span><hr class="horizontal-line-style">
+                    <p style="color: blue;margin-left: 20px;font-size: larger;">Rose Moon</p>
+                   </span>
+                    <br>
+                    <p style="margin-left: 20px;font-size: larger;padding-bottom: 20px;">
+                    Plastic Surgeon<br>
+                    Department of Plastic and <br> Reconstructive  Surgery<br>Dubai
+                    </p>
+                    </div>
+                    
+                </div>
+                
+                
+                    </div>
+                    
+    
+    
+    </div>
+    
+
+</body>
+</html>
