@@ -138,12 +138,14 @@ font-size:40px;
 
 .doctors{
     padding: 20px;
+    position: relative;
     margin-left:auto;
     margin-right:auto;
     width:auto;
     height:auto;    
 }
 .doctors-info{
+    position: relative;
     display: grid;
     width: auto;
     height: auto;
@@ -152,14 +154,52 @@ font-size:40px;
     
 }
 
- hr.horizontal-line-style{
+ .horizontal-line-style{
 
-background-color: blue;
-height:10px;
-margin-left: 0px;
-width:20px;
+background-color:blue;
+position: absolute;
+height:3px;
+left: 0px;
+width:10px;
+}
+#service-info{
+    position: absolute;
+    bottom: 75px;
+    margin-left: 115px;
+    font-size: 30px;
+
+    
 }
 
+
+.exclusiveServices{
+    width: 100%;
+    height: auto;
+    background-color: gray;
+
+}
+.multi-grid{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.column{
+    margin-left: auto;
+    margin-right: auto;
+    padding:50px;
+    background-color: white;
+    border: 20px solid gray;
+    
+
+}
+.enquiry{
+    width: 100%;
+    height: auto;
+    background-color:rgb(0,51, 255);
+}
 </style>
 </head>
 <body>
@@ -241,13 +281,14 @@ renowned research hospital. But until <br> the '80s, you couldn't go there. Now,
 <div class="doctors">
 <img src="./client/assets/images/image--002.jpg">
 <div class="doctors-info" style="background-color: #ffffff;">
-   <span><hr class="horizontal-line-style">
+  <span> <hr class="horizontal-line-style">
     <p style="color: blue;margin-left: 20px;font-size: larger;">Duke Sanson</p>
-   </span>
+</span>
     <br>
-    <p style="margin-left: 20px;font-size: larger;">
+    <p style="margin-left: 20px;font-size: larger;padding-bottom: 15px;">
     Neuro Surgeon<br>
     Chain Department of Neurological<br>Surgery<br>Australia
+    <div style="bottom: 0px;background-color:#89CFF0;height: 5px;position: absolute;width: 100%;"></div>
     </p>
     </div>
     
@@ -264,6 +305,7 @@ renowned research hospital. But until <br> the '80s, you couldn't go there. Now,
         Breast Cancer Surgeon<br>
         Director , UT ,Southwest<br>London
         </p>
+        <div style="bottom: 0px;background-color:#89CFF0;position:absolute;height: 5px;width: 100%;"></div>
         </div>
         
     </div>
@@ -279,6 +321,7 @@ renowned research hospital. But until <br> the '80s, you couldn't go there. Now,
             Cardiac Surgeon<br>
             MBBS, MD , FRCP , MRCP, Fellowship<br>Surgery<br>New Delhi, India
             </p>
+            <div style="bottom: 0px;background-color:#89CFF0;position:absolute;height: 5px;width: 100%;"></div>
             </div>
             
         </div>
@@ -294,6 +337,7 @@ renowned research hospital. But until <br> the '80s, you couldn't go there. Now,
                 Plastic Surgeon<br>
                 Department of Plastic and <br> Reconstructive  Surgery<br>Dubai
                 </p>
+                <div style="bottom: 0px;background-color:#89CFF0;position:absolute;height: 5px;width: 100%;"></div>
                 </div>
                 
             </div>
@@ -308,75 +352,87 @@ renowned research hospital. But until <br> the '80s, you couldn't go there. Now,
     <div style="text-align: center;font-size: 30px;color:black;height: auto;padding-top: 20px;font-size: 50px;font-weight: 900;">
         Featured Medical Treatments
     <br>
-    Join the thousands of others who have
-    </div>
+    <p style="margin-left: auto;margin-right: auto;font-size: 30px;padding-top: 20px; color: gray;">
+    Join the thousands of others who have<br>have exercised their rights to quality<br>healthcare at a price you can afford
+</p>    
+</div>
     <div class="doctors">
-    <img src="./client/assets/images/image--002.jpg">
-    <div class="doctors-info" style="background-color: #ffffff;">
-       <span><hr class="horizontal-line-style">
-        <p style="color: blue;margin-left: 20px;font-size: larger;">Duke Sanson</p>
-       </span>
-        <br>
-        <p style="margin-left: 20px;font-size: larger;">
-        Neuro Surgeon<br>
-        Chain Department of Neurological<br>Surgery<br>Australia
-        </p>
-        </div>
+    <img src="./client/assets/images/image--009.jpg">
+    
         
     </div>
     
     <div class="doctors">
-        <img src="./client/assets/images/image--004.jpg">
-        <div class="doctors-info" style="background-color: #ffffff;">
-           <span><hr class="horizontal-line-style">
-            <p style="color: blue;margin-left: 20px;font-size: larger;">Georgea Peter</p>
-           </span>
-            <br>
-            <p style="margin-left: 20px;font-size: larger;padding-bottom: 20px;">
-            Breast Cancer Surgeon<br>
-            Director , UT ,Southwest<br>London
-            </p>
-            </div>
-            
+        <img src="./client/assets/images/image--010.jpg">
+        
         </div>
         
         <div class="doctors">
-            <img src="./client/assets/images/image--005.jpg" width="800px" height="900px">
-            <div class="doctors-info" style="background-color: #ffffff;">
-               <span><hr class="horizontal-line-style">
-                <p style="color: blue;margin-left: 20px;font-size: larger;">Charlie Moon</p>
-               </span>
-                <br>
-                <p style="margin-left: 20px;font-size: larger;padding-bottom: 20px;">
-                Cardiac Surgeon<br>
-                MBBS, MD , FRCP , MRCP, Fellowship<br>Surgery<br>New Delhi, India
-                </p>
-                </div>
+            <img src="./client/assets/images/image--011.jpg" width="800px" height="900px">
+            
                 
             </div>
             
             <div class="doctors">
-                <img src="./client/assets/images/image--003.jpg" width="800px" height="900px">
-                <div class="doctors-info" style="background-color: #ffffff;">
-                   <span><hr class="horizontal-line-style">
-                    <p style="color: blue;margin-left: 20px;font-size: larger;">Rose Moon</p>
-                   </span>
-                    <br>
-                    <p style="margin-left: 20px;font-size: larger;padding-bottom: 20px;">
-                    Plastic Surgeon<br>
-                    Department of Plastic and <br> Reconstructive  Surgery<br>Dubai
-                    </p>
-                    </div>
+                <img src="./client/assets/images/image--006.jpg" width="800px" height="900px">
+                <p id="service-info">Multi Organ Transplant<br>50+ Specialists</p>
                     
                 </div>
-                
+                <div class="doctors">
+                    <img src="./client/assets/images/image--008.jpg" width="800px" height="900px">
+                    
+                    <p id="service-info" >Orthopedics Surgery <br>50+ Specialists</p>
+                    
+                        
+                    </div>
+                    <div class="doctors">
+                        <img src="./client/assets/images/image--007.jpg" width="800px" height="900px">
+                        <p id="service-info" >Infertility Treatment <br>50+ Specialists</p>
+                            
+                        </div>
                 
                     </div>
                     
+                   
     
+                </div>  
     
-    </div>
+                
+    <div class="exclusiveServices">
+   <p style="text-align: center;font-size: 40px;">Exclusive Services</p>
+   <p style="margin-top: 20px;font-size: 30px;text-align: center;">We want you to be comfortable and thus <br>apart from threating your illness, we<br>provide you with other services that you<br>can see</p>
+   <div class="multi-grid">
     
+      <div class="column">
+       <img src="./client/assets/images/Icons-01.png" class="center">
+       <h5 style="text-align: center;margin-top: 20px;font-weight: bold;">TRAVEL</h5>               
+      </div>  
+      <div class="column">
+      <img src="./client/assets/images/Icons-02.png"  style="margin-left: auto;margin-right: auto;">
+      <h5 style="text-align: center;margin-top: 20px;font-weight: bold;">FOOD</h5>
+      </div>
+
+      <div class="column">
+      <img src="./client/assets/images/Icons-03.png" width="100px" height="100px">
+      <h5 style="text-align: center;margin-top: 20px;font-weight: bold;">ACCOMODATION</h5>    
+      </div>
+      <div class="column">
+      <img src="./client/assets/images/Icons-07.png">
+      <h5 style="text-align: center;margin-top: 20px;font-weight: bold;">LABS</h5>    
+      </div>
+      <div class="column">
+      <img src="./client/assets/images/Icons-10.png">
+      <h5 style="text-align: center;margin-top: 20px;font-weight: bold;">REPORTS</h5>
+      </div>
+      <div class="column">
+      <img src="./client/assets/images/Icons-06.png">
+      <h5 style="text-align: center;margin-top: 20px;font-weight: bold;">AMBULANCE</h5>    
+      </div>
+   </div> 
+  </div>    
+<div class="enquiry">
+
+</div>
 
 </body>
 </html>
