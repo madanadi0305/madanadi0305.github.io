@@ -1,6 +1,7 @@
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">    
 <link href="./client/assets/css/reset.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>TV Astra</title>
@@ -15,7 +16,7 @@
 
 .affordable-healthcare{
     margin-top:0px;
-    background-color:#8fcaf1;
+    background-color:#93BCDB;
     width:auto;
     height:auto;
     padding-bottom:40px ;
@@ -32,6 +33,7 @@
 
 #para2{
     margin-top: 10px;
+
     padding-left: 30px;
     font-size: 30px;
     font-family: Verdana sans-serif;   
@@ -123,7 +125,7 @@ font-size:40px;
     grid-template-areas:
      "main";
     margin-top: 20px;
-    background-color: rgb(0, 51, 102);
+    background-color:23273D;
     
 }
 .grid-container-services{
@@ -156,11 +158,12 @@ font-size:40px;
 
  .horizontal-line-style{
 
-background-color:blue;
+background-color:#52CAFC;
 position: absolute;
-height:3px;
+height:2px;
 left: 0px;
-width:10px;
+width:15px;
+top:2px;
 }
 #service-info{
     position: absolute;
@@ -173,39 +176,95 @@ width:10px;
 
 
 .exclusiveServices{
-    width: 100%;
+    width: 120%;
     height: auto;
-    background-color: gray;
+   background-color:#F2F3F3;  
 
 }
-.multi-grid{
-    display: inline-grid;
-    grid-template-columns: auto auto;
-    margin-left: auto;
-    margin-right: auto;
 
+    .multi-grid{
+    display:grid;
+    grid-template-areas: "main"
+    "main"
+    ;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    grid-gap:20px;    
+    
 }
+
+
 
 .column{
-    margin-left: auto;
-    margin-right: auto;
-    padding:50px;
-    background-color: white;
-    border: 20px solid gray;
     
+    
+    width:200px;
+    height:200px;
+
+    background-color: white;
+    border: 20px solid #F2F3F3;
+    border-radius: 5px;    
+    
+}
+
+.column-image{
+margin-left: auto;
+margin-right: auto;
 
 }
 .enquiry{
-    width: 100%;
-    height: auto;
-    background-color:rgb(0,51, 255);
+    
+    margin-top:0px;
+    width: 120%;
+    height:350px;
+    background-color:#93BCDB;
+    
+}
+.enquiry-submit{
+    background-color:rgb(0, 102, 255);
+    height:60;
+    width: 200px;
+    border-radius: 10px;
+       
+    
+}
+.tv-astra-footer{
+background-color:#23273D;
+
+width: 120%;
+margin-top: 0px;
+height:auto;
+display: flex;
+flex-direction: column;
+
+
+}
+#logo{
+margin-top: 20px;
+
+margin-left: auto;
+margin-right: auto;
+}
+
+.footer-text{
+margin-top: 10px;
+text-align: center;
+font-size: 30;
+color: #ffffff;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content:center;
+    align-content: space-around;
 }
 </style>
 </head>
 <body>
 <nav>
     <img src="./client/assets/images/Logo.jpg" style="width: 200px;height: 100px;align-items: flex-start;margin-top: 10px;margin-left: 20px;">
-    <i class="fa fa-bars" style="align-items: flex-end;justify-items: flex-end;margin-top: 60px;height: 50;;color: #525659;margin-left: auto;margin-right: 10px; "></i>
+    <i class="fa fa-bars" style="align-items: flex-end;justify-items: flex-end;margin-top: 60px;height: 50;;color: #525659;margin-left: auto; "></i>
 </nav>
 <div class="affordable-healthcare">
 <p id="para1">
@@ -216,10 +275,28 @@ width:10px;
 <p id="para2">Join the thousands of others who have <br> exercised their right to quality<br> 
     healthcare at a price you can afford.</p>
 <div style="padding-left: 30px;display: flex;flex-direction: column;">
-<div class="icon-group">
-    
-    <input style="padding-left:10px ;height: 40;width: 70%;margin-top: 20px;" type="text" name="City" placeholder="Ahmedabad">
+<div class="icon-group" >
+    <div class="input-group">
+
+        <!-- Prepend the following content to the input box -->
+        <div class="input-group-prepend">
+
+            <!-- Define the text content of the group -->
+            <span class="input-group-text"><i class="fa fa-map-marker"></i></span>
+        </div>
+
+        <!-- Declare an input group -->
+        <input type="text" class="form-control" placeholder="Ahmedabad"  style="width: 70px;height: 40;">
+
+        <!-- Append the following content to the input box -->
+        <div class="input-group-append">
+
+            <!-- Define the text content of the group -->
+            <span class="input-group-text"><i class="fa fa-crosshairs"></i></span>
+        </div>
+    </div>
 </div>
+   
 
 
 <input style="width:70%;margin-top: 20px;height:40;" type="text" placeholder="Search for Doctor, hospitals and treatments">
@@ -282,7 +359,7 @@ renowned research hospital. But until <br> the '80s, you couldn't go there. Now,
 <img src="./client/assets/images/image--002.jpg">
 <div class="doctors-info" style="background-color: #ffffff;">
   <span> <hr class="horizontal-line-style">
-    <p style="color: blue;margin-left: 20px;font-size: larger;">Duke Sanson</p>
+    <p style="color:#2982E0;margin-left: 20px;font-size: larger;">Duke Sanson</p>
 </span>
     <br>
     <p style="margin-left: 20px;font-size: larger;padding-bottom: 15px;">
@@ -298,7 +375,7 @@ renowned research hospital. But until <br> the '80s, you couldn't go there. Now,
     <img src="./client/assets/images/image--004.jpg">
     <div class="doctors-info" style="background-color: #ffffff;">
        <span><hr class="horizontal-line-style">
-        <p style="color: blue;margin-left: 20px;font-size: larger;">Georgea Peter</p>
+        <p style="color:#2982E0;margin-left: 20px;font-size: larger;">Georgea Peter</p>
        </span>
         <br>
         <p style="margin-left: 20px;font-size: larger;padding-bottom: 20px;">
@@ -314,7 +391,7 @@ renowned research hospital. But until <br> the '80s, you couldn't go there. Now,
         <img src="./client/assets/images/image--005.jpg" width="800px" height="900px">
         <div class="doctors-info" style="background-color: #ffffff;">
            <span><hr class="horizontal-line-style">
-            <p style="color: blue;margin-left: 20px;font-size: larger;">Charlie Moon</p>
+            <p style="color:#2982E0;margin-left: 20px;font-size: larger;">Charlie Moon</p>
            </span>
             <br>
             <p style="margin-left: 20px;font-size: larger;padding-bottom: 20px;">
@@ -330,7 +407,7 @@ renowned research hospital. But until <br> the '80s, you couldn't go there. Now,
             <img src="./client/assets/images/image--003.jpg" width="800px" height="900px">
             <div class="doctors-info" style="background-color: #ffffff;">
                <span><hr class="horizontal-line-style">
-                <p style="color: blue;margin-left: 20px;font-size: larger;">Rose Moon</p>
+                <p style="color:#2982E0;margin-left: 20px;font-size: larger;">Rose Moon</p>
                </span>
                 <br>
                 <p style="margin-left: 20px;font-size: larger;padding-bottom: 20px;">
@@ -398,41 +475,71 @@ renowned research hospital. But until <br> the '80s, you couldn't go there. Now,
                 </div>  
     
                 
-    <div class="exclusiveServices">
-   <p style="text-align: center;font-size: 40px;">Exclusive Services</p>
+    <div class="exclusiveServices">    
+   <p style="text-align: center;font-size: 40px;padding-top: 30px;">Exclusive Services</p>
    <p style="margin-top: 20px;font-size: 30px;text-align: center;">We want you to be comfortable and thus <br>apart from threating your illness, we<br>provide you with other services that you<br>can see</p>
    <div class="multi-grid">
-    
+      
       <div class="column">
-       <img src="./client/assets/images/Icons-01.png" class="center">
+       <img src="./client/assets/images/Icons-01.png"  id="column-image">
        <h5 style="text-align: center;margin-top: 20px;font-weight: bold;">TRAVEL</h5>               
       </div>  
       <div class="column">
-      <img src="./client/assets/images/Icons-02.png"  style="margin-left: auto;margin-right: auto;">
+      <img src="./client/assets/images/Icons-02.png" id="column-image">
       <h5 style="text-align: center;margin-top: 20px;font-weight: bold;">FOOD</h5>
       </div>
-
+     
       <div class="column">
-      <img src="./client/assets/images/Icons-03.png" width="100px" height="100px">
+      <img src="./client/assets/images/Icons-03.png" id="column-image" >
       <h5 style="text-align: center;margin-top: 20px;font-weight: bold;">ACCOMODATION</h5>    
       </div>
       <div class="column">
-      <img src="./client/assets/images/Icons-07.png">
+      <img src="./client/assets/images/Icons-07.png" id="column-image">
       <h5 style="text-align: center;margin-top: 20px;font-weight: bold;">LABS</h5>    
       </div>
+      
       <div class="column">
-      <img src="./client/assets/images/Icons-10.png">
+      <img src="./client/assets/images/Icons-10.png" id="column-image">
       <h5 style="text-align: center;margin-top: 20px;font-weight: bold;">REPORTS</h5>
       </div>
       <div class="column">
-      <img src="./client/assets/images/Icons-06.png">
+      <img src="./client/assets/images/Icons-06.png" id="column-image">
       <h5 style="text-align: center;margin-top: 20px;font-weight: bold;">AMBULANCE</h5>    
       </div>
+     
    </div> 
   </div>    
 <div class="enquiry">
-
+   
+<p style="text-align: center;padding-top: 30px;font-size: 40px;font-weight: bolder;color: #ffffff;">Need Help ?</p>
+<p style="margin-left: 20px;text-align:center;font-size: 30px;margin-top: 20px;font-weight: bold;">Just let us know we will be happy to inform<br> you</p>
+<div style="margin-right: auto;margin-left: auto;margin-top: 40px;display: flex;justify-content: center;margin-bottom: 50px;">
+<button class="enquiry-submit"><p style="color: #ffffff;">Submit your enquiry</p></button>
 </div>
+</div>
+<footer class="tv-astra-footer">
 
+    
+    <img src="./client/assets/images/Logo.jpg" class="center" id="logo" >
+    
+<div class="footer-text">     
+    <p>Doctor</p>
+    <p>Hospital</p>
+    <p>Treatment</p>
+    <p>Other Services</p>
+    <p>FAQs</p>
+    <div class="social-media">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-pinterest-p"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-google-plus"></i>
+        <i class="fa fa-instagram"></i>
+        
+    </div>
+    <p style="margin-top: 20px;">All Rights Reserved.
+        <i class="fa fa-copyright"></i> tvastra 2018</p>    
+</div>     
+
+</footer>
 </body>
 </html>
